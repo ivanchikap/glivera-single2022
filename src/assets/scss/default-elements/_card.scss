@@ -26,7 +26,7 @@
         width: 77px;
         height: 80px;
         background-color: $green;
-        background-image: url(../images/icon-document.png), linear-gradient(32deg, $green 0%, #37865a 100%);
+        background-image: url(../images/icon-document.svg), linear-gradient(32deg, $green 0%, #37865a 100%);
         background-repeat: no-repeat, no-repeat;
         background-position: 100% 0, center;
         background-size: 5.1rem 6.2rem, 100%;
@@ -67,7 +67,7 @@
         width: 8.7rem;
         height: 9.2rem;
         background-color: $red;
-        background-image: url(../images/camera.png), linear-gradient(32deg, $red 0%, $dark-red 100%);
+        background-image: url(../images/camera.svg), linear-gradient(32deg, $red 0%, $dark-red 100%);
         background-repeat: no-repeat, no-repeat;
         background-position: 100% 0, center;
         background-size: 6.5rem 5.6rem, 100%;
