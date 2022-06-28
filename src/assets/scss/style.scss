@@ -1,5 +1,6 @@
 @import "vars";
 @import "mixins";
+@import "extends";
 @import "reset";
 @import "fontawesome";
 @import "grid";
@@ -9,4 +10,7 @@
 @import "default-elements/all";
 
 @import "header/all";
+
+@import "services-section/services";
+
 @import "footer/footer";

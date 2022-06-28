@@ -1,0 +1,21 @@
+.services {
+  background-color: $white;
+  padding: 5rem 11rem;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    max-width: 86.2rem;
+    margin: 0 auto;
+  }
+
+  &__item {
+    width: 50%;
+    overflow: hidden;
+
+    &:first-child {
+      margin-right: 5.2rem;
+    }
+
+  }
+}

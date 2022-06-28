@@ -1,0 +1,23 @@
+.btn {
+  display: inline-block;
+  color: $white;
+  cursor: pointer;
+  border-radius: 2px;
+  font-family: inherit;
+  font-size: 2.6rem;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  @extend %text-overflow;
+
+  &--default {
+    padding: 0.37em 1.4em;
+    background-color: #227dd3;
+    transition: background-color .2s linear;
+
+    &:hover {
+      background-color: darken(#227dd3, 10%);
+    }
+  }
+}

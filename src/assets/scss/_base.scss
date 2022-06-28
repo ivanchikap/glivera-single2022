@@ -8,14 +8,13 @@ body {
   justify-content: space-between;
   min-height: 100vh;
 
-  font-family: $base-fonts;
-  color: #212121;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  color: $text-color;
   font-weight: 400;
   font-size: 1.4rem;
-  line-height: 1.2;
+  line-height: 1.6;
 
-  background-color:#efefef;
-
+  background-color: $white;
 
   &.no-scroll {
     overflow: hidden;
@@ -25,6 +24,14 @@ body {
     overflow: hidden;
   }
 
+}
+
+main {
+  padding-top: 11.4rem;
+}
+
+strong {
+  font-weight: 700;
 }
 
 .hidden-title {

@@ -1,0 +1,159 @@
+.card {
+  $root: &;
+  display: flex;
+  align-items: center;
+
+  &--documents {
+    #{$root} {
+
+      &__img {
+        width: 9.5rem;
+        height: 11.6rem;
+        box-shadow: 0 0.5rem 0 rgba(29, 70, 48, 0.75);
+        background-color: $green;
+
+        &::before {
+          background-color: $light-green;
+          background-image: linear-gradient(-45deg, $light-green 0, $light-green 50%, #fff 50%, #fff 100%);
+        }
+
+        &::after {
+          border-color: $dark-green transparent transparent transparent;
+        }
+      }
+
+      &__icon {
+        width: 77px;
+        height: 80px;
+        background-color: $green;
+        background-image: url(../images/icon-document.png), linear-gradient(32deg, $green 0%, #37865a 100%);
+        background-repeat: no-repeat, no-repeat;
+        background-position: 100% 0, center;
+        background-size: 5.1rem 6.2rem, 100%;
+
+        &::before {
+          background-image: linear-gradient(-45deg, $green 0, $green 15%, transparent 15%, transparent 85%, $green 85%, $green 100%);
+        }
+
+        &::after {
+          width: 1rem;
+          height: 1rem;
+          background-color: $green;
+        }
+      }
+    }
+  }
+
+  &--photos {
+    #{$root} {
+
+      &__img {
+        width: 10.2rem;
+        height: 12.2rem;
+        box-shadow: 0 0.5rem 0 rgba(177, 34, 10, 0.75);
+        background-color: $red;
+
+        &::before {
+          background-color: $light-red;
+          background-image: linear-gradient(-45deg, $light-red 0, $light-red 50%, #fff 50%, #fff 100%);
+        }
+
+        &::after {
+          border-color: $dark-red transparent transparent transparent;
+        }
+      }
+
+      &__icon {
+        width: 8.7rem;
+        height: 9.2rem;
+        background-color: $red;
+        background-image: url(../images/camera.png), linear-gradient(32deg, $red 0%, $dark-red 100%);
+        background-repeat: no-repeat, no-repeat;
+        background-position: 100% 0, center;
+        background-size: 6.5rem 5.6rem, 100%;
+
+        &::before {
+          width: 8.7rem;
+          height: 9.2rem;
+          background-image: linear-gradient(-45deg, $red 0, $red 15%, transparent 15%, transparent 85%, $red 85%, $red 100%);
+        }
+
+        &::after {
+          width: 2.1rem;
+          height: 0.8rem;
+          background-color: $red;
+        }
+      }
+    }
+  }
+
+  &__img {
+    display: block;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 2.1rem;
+      height: 2.3rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 2.3rem;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 2.1rem 2.1rem 0 0;
+      z-index: 4;
+    }
+  }
+
+  &__icon {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    &::before, &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 3;
+    }
+
+    &::before {
+      width: 7.7rem;
+      height: 8rem;
+    }
+  }
+
+  &__text {
+    padding: 0 2.5rem;
+    max-width: 32rem;
+  }
+
+  &__title {
+    color: $black;
+    font-size: 2.7rem;
+    font-weight: 500;
+  }
+
+  &__title-link {
+    @extend %text-overflow;
+  }
+
+  &__description {
+    max-height: 6.7rem;
+  }
+}
