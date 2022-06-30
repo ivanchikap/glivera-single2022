@@ -139,21 +139,25 @@
   }
 
   &__text {
-    padding: 0 2.5rem;
+    padding-left: 2.5rem;
     max-width: 32rem;
+    max-height: 12.2rem;
+
+    @include tablet {
+      padding-left: 1.5rem;
+      max-height: 13.2rem;
+    }
   }
 
   &__title {
     color: $black;
     font-size: 2.7rem;
     font-weight: 500;
+    line-height: 1;
+    margin-bottom: 1rem;
   }
 
   &__title-link {
     @extend %text-overflow;
-  }
-
-  &__description {
-    max-height: 6.7rem;
   }
 }

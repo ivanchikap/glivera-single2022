@@ -1,12 +1,14 @@
 .services {
   background-color: $white;
-  padding: 5rem 11rem;
+  padding: 5rem 0 11rem 0;
 
   &__container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     max-width: 86.2rem;
     margin: 0 auto;
+    padding: 0 1.5rem;
   }
 
   &__item {
@@ -14,7 +16,18 @@
     overflow: hidden;
 
     &:first-child {
-      margin-right: 5.2rem;
+      margin-right: 7rem;
+
+      @include tablet {
+        margin-right: 3rem;
+      }
+      @include mobile-large {
+        margin-right: 0;
+      }
+    }
+
+    @include mobile-large {
+      width: 100%;
     }
 
   }
