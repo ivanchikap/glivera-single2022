@@ -1,10 +1,18 @@
 .laptop {
   position: relative;
   margin-top: -5.5rem;
-  padding: 0 0 13.5rem 0;
+  padding-bottom: 13.5rem;
   background-color: $green;
   overflow: hidden;
   color: $white;
+
+  @include mobile-large {
+    padding-bottom: 8rem;
+  }
+
+  @include mobile {
+    padding-bottom: 5rem;
+  }
   
   &::before {
     content: "";
@@ -47,6 +55,10 @@
         width: 26rem;
         margin-right: 3rem;
       }
+
+      @include mobile-large {
+        content: none;
+      }
     }
 
     @include laptop {
@@ -57,9 +69,18 @@
     @include tablet {
       max-width: 100%;
     }
+    
+    @include mobile-large {
+      text-align: center;
+    }
   }
 
   &__paragraph {
+
+    @include mobile-large {
+      text-align: left;
+    }
+
     & + & {
       margin-top: 5rem;
     }
@@ -70,6 +91,14 @@
     font-weight: 500;
     line-height: 1;
     margin-bottom: 2rem;
+
+    @include mobile-large {
+      font-size: 3rem;
+    }
+
+    @include mobile {
+      font-size: 2.6rem;
+    }
   }
 
   &__btn {

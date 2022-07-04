@@ -2,6 +2,14 @@
   background-color: $white;
   padding: 5rem 0 11rem 0;
 
+  @include mobile-large {
+    padding: 5rem 0 8rem 0;
+  }
+
+  @include mobile {
+    padding: 5rem 0;
+  }
+
   &__container {
     display: flex;
     justify-content: center;
@@ -9,6 +17,10 @@
     max-width: 86.2rem;
     margin: 0 auto;
     padding: 0 1.5rem;
+
+    @include mobile-large {
+      max-width: 100%;
+    }
   }
 
   &__item {
@@ -16,19 +28,19 @@
     overflow: hidden;
 
     &:first-child {
-      margin-right: 7rem;
+      padding-right: 7rem;
 
       @include tablet {
-        margin-right: 3rem;
+        padding-right: 3rem;
       }
       @include mobile-large {
-        margin-right: 0;
+        padding-right: 0;
+        margin-bottom: 2rem;
       }
     }
 
     @include mobile-large {
       width: 100%;
     }
-
   }
 }
